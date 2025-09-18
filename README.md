@@ -3,7 +3,6 @@
 Proyek ini menampilkan contoh implementasi **Music Card** di Flutter dengan menggabungkan widget **Card**, **SizedBox**, dan **Spacer**.  
 Tujuan utamanya adalah memahami bagaimana tata letak (layout) bekerja secara fleksibel dan rapi di Flutter.
 
----
 
 ## 📌 Tentang Proyek
 - **Nama Proyek:** music_card_example  
@@ -13,8 +12,6 @@ Tujuan utamanya adalah memahami bagaimana tata letak (layout) bekerja secara fle
   - Menggunakan **SizedBox** sebagai jarak antar widget.
   - Memanfaatkan **Spacer** untuk mengatur tata letak agar elemen tertentu terdorong ke bawah.
   - Mengombinasikan dengan **Expanded** agar informasi lagu fleksibel mengikuti sisa ruang.
-
----
 
 ## 🔲 Konsep Utama
 
