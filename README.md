@@ -1,16 +1,44 @@
-# demo_sizedbox
+# 🎶 Music Card - Flutter Example
 
-A new Flutter project.
+Proyek ini menampilkan contoh implementasi **Music Card** di Flutter dengan menggabungkan widget **Card**, **SizedBox**, dan **Spacer**.  
+Tujuan utamanya adalah memahami bagaimana tata letak (layout) bekerja secara fleksibel dan rapi di Flutter.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 📌 Tentang Proyek
+- **Nama Proyek:** music_card_example  
+- **Deskripsi:** Contoh sederhana pembuatan kartu musik dengan cover album, judul lagu, nama artis, progress bar, dan tombol play.  
+- **Tujuan:**
+  - Mengenal penggunaan **Card** untuk tampilan container dengan elevation dan border radius.
+  - Menggunakan **SizedBox** sebagai jarak antar widget.
+  - Memanfaatkan **Spacer** untuk mengatur tata letak agar elemen tertentu terdorong ke bawah.
+  - Mengombinasikan dengan **Expanded** agar informasi lagu fleksibel mengikuti sisa ruang.
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 🔲 Konsep Utama
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 📐 Card
+Membungkus seluruh konten dalam sebuah kartu dengan efek **elevation** dan **rounded corner**.
+
+```dart
+Card(
+  elevation: 6,
+  shape: RoundedRectangleBorder(
+    borderRadius: BorderRadius.circular(16),
+  ),
+  child: ...
+)
+```
+
+```dart
+const SizedBox(width: 16),
+Column(
+  children: [
+    Text("Song Title"),
+    Text("Artist Name"),
+    Spacer(), // progress bar terdorong ke bawah
+    LinearProgressIndicator(...),
+  ],
+)
+```
